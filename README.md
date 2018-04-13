@@ -15,11 +15,11 @@ int hashme(T param, int tablesize) {
     return hashval;
 }
 ```
-*We declare this as a template function so it can be applied to any data structure.  
-*We use typecasting to point ptr at the address of the parameter.  ptr can then look at the data structure one byte at a time.
-*The sizeof() function will return the number of bytes (or unsigned characters) in the parameter.
-*We can use this size to compute a sum of all the bytes in the parameter.
-*The function then uses the mod operator to return a hash between 0 and the tablesize
+* We declare this as a template function so it can be applied to any data structure.  
+* We use typecasting to point ptr at the address of the parameter.  ptr can then look at the data structure one byte at a time.
+* The sizeof() function will return the number of bytes (or unsigned characters) in the parameter.
+* We can use this size to compute a sum of all the bytes in the parameter.
+* The function then uses the mod operator to return a hash between 0 and the tablesize
 
 You can then call the hash function with whatever type you want to hash.
 ```c++
