@@ -26,3 +26,4 @@ You can then call the hash function with whatever type you want to hash.
     string foo("Hello");
     cout << "Hash of Hello "<<hashme<string>(foo, tablesize)<<endl;
 ```
+Although this hash function works well for arrays and strings, you would have to write a more complex hashing function for a vector since it will allocate memory on the heap.  But this hash function may still spread out the values based on the internal structure of the vector.
